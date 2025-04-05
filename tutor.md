@@ -150,3 +150,24 @@ Environment=NODE_ENV=development
 [Install]
 WantedBy=multi-user.target
 ```
+
+
+wait anyway when i use node js(express.js), spring boot, laravel. I was run a command like node starter.js or mvn run:repo so the framework are run an program which give log and cli terminal who can access the system in localhost:3000. But its different to run php backend which i dont type a command to run the php backend but only just access the index.php. So what is the difference mean of running backend framework like node js(express.js), spring boot java, laravel php and running backend framework from programming language native like php, go lang?
+
+So when i run program in terminal for every framework to type like "php artisan serve" in laravel, "mvn run :reponame" in spring boot, "node server.js" in node js (express.js), python3 app.py in flask python and all of that are outputing for accessing the system in "localhost:port" which mean the framework are run by a web server?
+
+okay but how about if framework who haev their own web server / embedded web server like spring boot java or express js (node js) are run by external web server like nginx or apache?
+
+Because in my current experience when i run node js backend framework i must run command "node server.js" so the backend framework are can be accessed from port 3000. After that i configure the nginx to run reverse proxy from incoming request from listening port 80 and the forward it to port 3000 to So the request is successfully accessed my backend service (node.js). But does the step is difference when i only want to use external web server so i dont need to type command "node server.js" and do reverse proy in nginx?
+
+wait so although i use systemd for run my backend repository backgroundly, the web server who run my backend service is still from node js web server? Because i want to ask is it possible to run an external web server so the node js does need to run their own web server? just like php who use nginx for run ther web server
+
+if the node js must be use their own web server then does laravel also can be work like node js? I mean just using systemd for the worker to run php artisan serve and then do reverse proxy from nginx to php artisan web server. But in most case why laravel is same treated like php native? which is use external web werver?
+
+
+ssh
+
+Lets talk about deployment of the database. So i want the database can be accessed from ip address with username and password from the azure VM that i have. Do you know how to do that?
+
+
+okay, the database has been connected and deployed. But does the tutorial that you give is safe and best practice? If no, do you have suggestion to give tutorial for deploying the database to be more safe for accessing?
