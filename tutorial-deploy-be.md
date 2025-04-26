@@ -15,6 +15,16 @@ server {
     }
 }
 ```
+- restart the nginx:
+```
+sudo systemctl restart nginx
+```
+- see nginx status:
+```
+sudo nginx -t
+```
+
+
 2. Configure systemd for run node js with background service
 'nano /etc/systemd/system/servicename.service'
 ```syntax
@@ -34,9 +44,13 @@ Environment=NODE_ENV=development
 [Install]
 WantedBy=multi-user.target
 ```
+=======NOTE:=======
+Jangan lupa ketik command 'sudo visudo'
+===================
 'systemctl daemon-reload'
 'systemctl enable applicationname'
 'systemctl restart applicationname'
+
 
 3. access service via ip address of ssh.
 
