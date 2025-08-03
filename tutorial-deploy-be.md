@@ -29,7 +29,7 @@ sudo systemctl restart nginx
 sudo nginx -t
 ```
 
-6. Configure systemd for run node js with background service
+6. Configure systemd for run service with background service. (for the example im using node js to run serviec bacgroundly)
 - 'nano /etc/systemd/system/{namaServiceSystemD}'
 ```syntax
 [Unit]
